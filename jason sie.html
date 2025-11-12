@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elyon Christian School Student Regulation</title>
+  <style>
+    /* ====== Global Styles ====== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #007acc;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .page-container {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .page {
+      flex: none;
+      width: 100vw;
+      height: 100vh;
+      padding: 30px;
+      box-sizing: border-box;
+      scroll-snap-align: start;
+      overflow-y: auto;
+    }
+
+    .page:nth-child(odd) { background: #ffffff; }
+    .page:nth-child(even) { background: #eef7ff; }
+
+    h1, h2 {
+      color: #007acc;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    button {
+      margin: 15px 0;
+      padding: 10px 15px;
+      background: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #007acc;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- ====== Header ====== -->
+  <header>
+    <h1>Elyon Christian School</h1>
+    <p>Student Regulation & Core Values</p>
+  </header>
+
+  <!-- ====== Pages ====== -->
+  <div class="page-container">
+    <!-- Page 1 -->
+    <div class="page">
+      <h2>Student Regulation</h2>
+      <p>General rules that applied in Elyon Christian schools:</p>
+      <ul>
+        <li>Arrive on time and attend all classes regularly.</li>
+        <li>Respect teachers, staff, and fellow students.</li>
+        <li>Use English as the primary language in class.</li>
+        <li>Maintain proper school uniform and grooming.</li>
+        <li>Keep classrooms and school grounds clean.</li>
+        <li>Electronic devices only for learning when permitted.</li>
+        <li>No bullying, harassment, or discrimination.</li>
+        <li>Academic honesty — no plagiarism or cheating.</li>
+        <li>Participate in school activities and events.</li>
+        <li>Follow safety rules during sports and labs.</li>
+      </ul>
+      <button onclick="alert('Respect the code of conduct!')">Highlight Rule</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page">
+      <h2>Core Values</h2>
+      <ol>
+        <li>Respect the school’s code of conduct and values.</li>
+        <li>Report issues to a teacher or counselor.</li>
+        <li>Contribute positively to the school community.</li>
+      </ol>
+      <button onclick="alert('Good job contributing to the community!')">Click Me</button>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page">
+      <h2>High School Campus</h2>
+      <img src="elyon-christian-school-highschool.jpg" 
+           alt="Elyon Christian School High School Campus">
+      <p>This image shows the Elyon Christian School High School campus in Surabaya, Indonesia.</p>
+      <button onclick="window.location.href='https://elyon.sch.id'">Visit School Website</button>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="page">
+      <h2>School Activity</h2>
+      <img src="https://elyon.sch.id/landing_page/wp-content/uploads/2024/05/DSC07493-2-1024x833.jpg" 
+           alt="Elyon Christian School Activity">
+      <p>This image shows a school activity at Elyon Christian School.</p>
+    </div>
+  </div>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    &copy; 2025 Elyon Christian School | Designed by Jason Sie 8A
+  </footer>
+</body>
+</html>
